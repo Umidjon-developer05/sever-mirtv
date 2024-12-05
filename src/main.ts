@@ -7,4 +7,3 @@ async function nest() {
   await app.setGlobalPrefix('api').listen(process.env.PORT || 8080);
 }
 nest();
-
