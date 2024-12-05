@@ -3,7 +3,7 @@ import { AppModule } from './app/app.module';
 
 async function nest() {
   const app = await NestFactory.create(AppModule);
-  app.enableCors({ origin: 'http://localhost:3000' });
+  app.enableCors({ origin: 'https://www.mirtv.uz' });
   await app.setGlobalPrefix('api').listen(process.env.PORT || 8080);
 }
 nest();
