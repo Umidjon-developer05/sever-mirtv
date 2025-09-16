@@ -12,22 +12,9 @@ import { StudiosModule } from 'src/studios/studios.module';
   imports: [
     ConfigModule.forRoot(),
     MongooseModule.forRoot(
-       `mongodb+srv://Shoxruxasadov:Sh4157833@moviego.5164gwd.mongodb.net/?retryWrites=true&w=majority&appName=MovieGo`,
+      `mongodb+srv://Shoxruxasadov:Sh4157833@moviego.5164gwd.mongodb.net/?retryWrites=true&w=majority&appName=MovieGo`,
       { dbName: 'moviego' },
     ),
-    // MailerModule.forRoot({
-    //   transport: {
-    //     host: 'smtp.sendgrid.net',
-    //     auth: {
-    //       user: 'apikey',
-    //       pass: process.env.SENDGRID_API_KEY,
-    //     },
-    //   },
-    //   // template: {
-    //   //   dir: join(__dirname, 'mails'),
-    //   //   adapter: new HandlebarsAdapter(),
-    //   // },
-    // }),
     UsersModule,
     MoviesModule,
     StudiosModule,
