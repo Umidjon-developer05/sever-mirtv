@@ -12,7 +12,8 @@ import { StudiosModule } from 'src/studios/studios.module';
   imports: [
     ConfigModule.forRoot(),
     MongooseModule.forRoot(
-      `mongodb+srv://umidjon:Umidjon2005@cluster0.ne91t.mongodb.net/test`,
+       `mongodb+srv://Shoxruxasadov:Sh4157833@moviego.5164gwd.mongodb.net/?retryWrites=true&w=majority&appName=MovieGo`,
+      { dbName: 'moviego' },
     ),
     // MailerModule.forRoot({
     //   transport: {
