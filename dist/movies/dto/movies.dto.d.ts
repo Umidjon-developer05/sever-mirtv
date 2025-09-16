@@ -1,0 +1,32 @@
+import { LangDto } from './lang.dto';
+import { ImageDto } from './image.dto';
+import { MovieDto } from './movie.dto';
+import { SerieDto } from './serie.dto.';
+export declare class MoviesDto {
+    name: string;
+    title: LangDto;
+    description: LangDto;
+    image: ImageDto;
+    source: MovieDto | null;
+    episodes: SerieDto[] | null;
+    seasons: string[] | null;
+    type: string;
+    module: string;
+    format: string;
+    resolution: string;
+    duration: number;
+    release: string;
+    timeline: string;
+    grossing: string | null;
+    budget: string | null;
+    studio: any;
+    made: string;
+    mpa: number;
+    genre: string[];
+    languages: string[];
+    ratings: string[];
+    cast: any[];
+    directors: any[];
+    producers: any[];
+    screenwriters: any[];
+}
