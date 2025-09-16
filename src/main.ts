@@ -4,7 +4,7 @@ import { AppModule } from './app/app.module';
 async function nest() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-  origin: ['https://mir-tv.vercel.app', 'https://www.mirtv.uz'],
+  origin: ['https://mir-tv.vercel.app', 'https://www.mirtv.uz',"http://localhost:3000"],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 });
